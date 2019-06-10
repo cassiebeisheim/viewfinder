@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		186FEE1522AEFB2000F5F707 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186FEE1422AEFB2000F5F707 /* AppDelegate.swift */; };
-		186FEE1722AEFB2000F5F707 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186FEE1622AEFB2000F5F707 /* ViewController.swift */; };
 		186FEE1A22AEFB2000F5F707 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186FEE1822AEFB2000F5F707 /* Main.storyboard */; };
 		186FEE1D22AEFB2000F5F707 /* viewfinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 186FEE1B22AEFB2000F5F707 /* viewfinder.xcdatamodeld */; };
 		186FEE1F22AEFB2200F5F707 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 186FEE1E22AEFB2200F5F707 /* Assets.xcassets */; };
@@ -18,7 +17,6 @@
 /* Begin PBXFileReference section */
 		186FEE1122AEFB2000F5F707 /* viewfinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = viewfinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		186FEE1422AEFB2000F5F707 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		186FEE1622AEFB2000F5F707 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		186FEE1922AEFB2000F5F707 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		186FEE1C22AEFB2000F5F707 /* viewfinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = viewfinder.xcdatamodel; sourceTree = "<group>"; };
 		186FEE1E22AEFB2200F5F707 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				186FEE1422AEFB2000F5F707 /* AppDelegate.swift */,
-				186FEE1622AEFB2000F5F707 /* ViewController.swift */,
 				186FEE1822AEFB2000F5F707 /* Main.storyboard */,
 				186FEE1E22AEFB2200F5F707 /* Assets.xcassets */,
 				186FEE2022AEFB2200F5F707 /* LaunchScreen.storyboard */,
@@ -139,7 +136,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				186FEE1D22AEFB2000F5F707 /* viewfinder.xcdatamodeld in Sources */,
-				186FEE1722AEFB2000F5F707 /* ViewController.swift in Sources */,
 				186FEE1522AEFB2000F5F707 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
