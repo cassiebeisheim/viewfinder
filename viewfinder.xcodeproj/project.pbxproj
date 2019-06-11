@@ -12,6 +12,7 @@
 		186FEE1D22AEFB2000F5F707 /* viewfinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 186FEE1B22AEFB2000F5F707 /* viewfinder.xcdatamodeld */; };
 		186FEE1F22AEFB2200F5F707 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 186FEE1E22AEFB2200F5F707 /* Assets.xcassets */; };
 		186FEE2222AEFB2200F5F707 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186FEE2022AEFB2200F5F707 /* LaunchScreen.storyboard */; };
+		18A89BF422B0487B00EDEC18 /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A89BF322B0487B00EDEC18 /* AddPhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		186FEE1E22AEFB2200F5F707 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		186FEE2122AEFB2200F5F707 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		186FEE2322AEFB2200F5F707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18A89BF322B0487B00EDEC18 /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				186FEE1422AEFB2000F5F707 /* AppDelegate.swift */,
 				186FEE1822AEFB2000F5F707 /* Main.storyboard */,
+				18A89BF322B0487B00EDEC18 /* AddPhotoViewController.swift */,
 				186FEE1E22AEFB2200F5F707 /* Assets.xcassets */,
 				186FEE2022AEFB2200F5F707 /* LaunchScreen.storyboard */,
 				186FEE2322AEFB2200F5F707 /* Info.plist */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				186FEE1D22AEFB2000F5F707 /* viewfinder.xcdatamodeld in Sources */,
+				18A89BF422B0487B00EDEC18 /* AddPhotoViewController.swift in Sources */,
 				186FEE1522AEFB2000F5F707 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

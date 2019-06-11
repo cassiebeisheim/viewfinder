@@ -34,15 +34,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="ViewFinder" id="PTd-9p-1zE">
-                        <barButtonItem key="rightBarButtonItem" title="Item" style="plain" id="p0j-ER-tu9">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZCx-UY-TH0">
-                                <rect key="frame" x="276" y="0.0" width="83" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <state key="normal" title="+"/>
-                            </button>
+                        <barButtonItem key="rightBarButtonItem" title="+" width="28" id="7r1-bu-HMC">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                            </userDefinedRuntimeAttributes>
                             <connections>
-                                <segue destination="wgh-qU-K1M" kind="show" id="d3l-mV-yNj"/>
+                                <segue destination="wgh-qU-K1M" kind="show" id="pGE-6e-K6j"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -54,7 +51,7 @@
         <!--Add New Photo-->
         <scene sceneID="bz9-25-gdi">
             <objects>
-                <viewController id="wgh-qU-K1M" sceneMemberID="viewController">
+                <viewController id="wgh-qU-K1M" customClass="AddPhotoViewController" customModule="viewfinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AO8-Pr-pst">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,34 +68,49 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6m-GV-Wez">
-                                <rect key="frame" x="16" y="532" width="156" height="53"/>
+                                <rect key="frame" x="26" y="532" width="156" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="takePhoto:" destination="wgh-qU-K1M" eventType="touchUpInside" id="o1Z-aG-JNr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97D-Cu-wKe">
-                                <rect key="frame" x="203" y="594" width="156" height="53"/>
+                                <rect key="frame" x="193" y="594" width="156" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Album"/>
+                                <connections>
+                                    <action selector="viewAlbum:" destination="wgh-qU-K1M" eventType="touchUpInside" id="a3o-5y-WVf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFJ-B4-r1n">
-                                <rect key="frame" x="203" y="532" width="156" height="53"/>
+                                <rect key="frame" x="193" y="532" width="156" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Photo Library"/>
+                                <connections>
+                                    <action selector="choosePhoto:" destination="wgh-qU-K1M" eventType="touchUpInside" id="KKD-gi-37W"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8S-fd-RVY">
-                                <rect key="frame" x="16" y="594" width="156" height="53"/>
+                                <rect key="frame" x="26" y="594" width="156" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="savePhoto:" destination="wgh-qU-K1M" eventType="touchUpInside" id="3Bw-Oq-CXh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="AYF-5O-zmh"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add New Photo" id="IHy-pe-NIN"/>
+                    <connections>
+                        <outlet property="photoSpace" destination="djM-4o-UNU" id="D9l-Lv-UeQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8GC-Oh-2zm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
